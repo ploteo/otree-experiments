@@ -1,0 +1,63 @@
+{{ extends "global/Page.html" }}
+{{ load otree static }}
+
+{{ block title }}
+    Instructions
+{{ endblock }}
+
+{{ block content }}
+
+
+<p>Consider the following situation:</p>
+
+<p>Two participants to this study are randomly and anonymously paired. One participant is labelled <i>Subject A</i> and the other <i>Subject B.</i>
+</p>
+
+<p>Subject A must decide among two alternatives, called <i>Option 1</i> and <i>Option 2.</i></p>
+<br>
+<center><img src="{{ static "TG/en.png" }}" width=300 /></center>
+<br>
+<ul>
+    <li>
+        <b>Option 1:</b> Subject A keeps the 10 Points and nothing is passed to Subject B. The game ends without Subject B taking any decision and earnings will be 10 Points for Subject A and 0 Points for Subject B, respectively.
+    </li>
+    <li>
+        <b>Option 2:</b> Subject A passes 10 Points to Subject B. The 10 Points will be multiplied by a factor of 4, thus Subject B will receive 40 Points. In this case Subject B must decide among <i>Option 3</i> and <i>Option 4</i>:
+    </li>
+    <li>
+        <b>Option 3:</b> Subject B keeps the 40 Points and nothing is passed back to Subject A. Earnings will be 0 Points for Subject A and 40 Points for Subject B, respectively.
+    </li>
+    <li>
+        <b>Option 4:</b> Subject B keeps the 18 Points and passes back 22 Points to Subject A. Earnings will be 22 Points for Subject A and 18 Points for Subject B, respectively.
+    </li>
+</ul>
+
+One of the participants in each couple is randomly assigned to be Subject A and the other to be Subject B.<br>
+
+
+{{ if play == True}}
+
+Subject B will choose after knowing the choice of Player A.
+
+{{ else}}
+
+Subject B will choose before knowing the choice of Player A.
+
+{{ endif }}
+
+<div class="container" style="font-size:12pt">
+    <div class="row">
+        &nbsp;
+    </div>
+    <div class="row" style="padding-left:135px;">
+        <div class="col-md-10">
+        </div>
+        <div class="col-md-2">
+            <button name="btn_submit" value="True" class="btn btn-primary btn-large">
+                <span style="font-size:18pt">Start</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+{{ endblock }}

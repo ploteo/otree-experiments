@@ -1,0 +1,43 @@
+{{ extends "global/Page.html" }}
+{{ load otree static }}
+
+{{ block title }}
+    Results
+{{ endblock }}
+
+{{ block content }}
+<center><img src="{{ static "TG/en.png" }}" /></center>
+{{ if first_mover == True }}
+    You were a Subject A. <br>You chose {{choice_1 }}. <br>
+     The other chose {{ choice_2 }}.
+{{ else }}
+    You were a Subject B. <br>
+        You chose {{ choice_2 }}.<br>
+        The other chose {{ choice_1 }}.
+  {{ endif }}
+
+
+
+<br>
+Thus, you earn {{ payoff }}.
+<br>
+
+
+
+<div class="container" style="font-size:12pt">
+    <div class="row">
+        &nbsp;
+    </div>
+    <div class="row" style="padding-left:135px;">
+        <div class="col-md-10">
+        </div>
+        <div class="col-md-2">
+            <button name="btn_submit" value="True" class="btn btn-primary btn-large">
+                <span style="font-size:18pt">Finish</span>
+            </button>
+        </div>
+    </div>
+</div>
+{{ endblock }}
+
+

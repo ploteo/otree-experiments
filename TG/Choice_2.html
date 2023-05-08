@@ -1,0 +1,37 @@
+{{ extends "global/Page.html" }}
+{{ load otree static }}
+
+{{ block title }}
+    You are Subject B
+{{ endblock }}
+
+{{ block content }}
+
+{{ if display == True}}
+
+Subject A chose {{choice_other}}.
+
+{{endif}}
+
+<br>
+
+<center><img src="{{ static "TG/en.png" }}" /></center>
+
+ {{ formfield group.choice_2 label="Please choose between Option 3 and Option 4:" }}
+
+<div class="container" style="font-size:12pt">
+    <div class="row">
+        &nbsp;
+    </div>
+    <div class="row" style="padding-left:135px;">
+        <div class="col-md-10">
+        </div>
+        <div class="col-md-2">
+            <button name="btn_submit" value="True" class="btn btn-primary btn-large">
+                <span style="font-size:18pt">Confirm</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+{{ endblock }}
