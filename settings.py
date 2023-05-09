@@ -11,12 +11,12 @@ SESSION_CONFIGS = [
     #     app_sequence=['styles'],
     #     num_demo_participants=2
     # ),
-    # dict(
-    #     name='TG',
-    #     app_sequence=['TG'],
-    #     num_demo_participants=2,
-    #     treatment = "method"# play= sequential; method= strategy method
-    # ),
+     dict(
+         name='TG',
+         app_sequence=['TG'],
+         num_demo_participants=2,
+         treatment = "method"# play= sequential; method= strategy method
+     ),
     # dict(
     #     name='PGG',
     #     app_sequence=['PGG'],
