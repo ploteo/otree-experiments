@@ -11,6 +11,10 @@ SESSION_CONFIGS = [
     #     app_sequence=['styles'],
     #     num_demo_participants=2
     # ),
+    dict(name='hello_world',
+         app_sequence=['hello_world'],
+         num_demo_participants=2     
+    ),
      dict(
          name='TG',
          app_sequence=['TG'],
