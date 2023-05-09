@@ -1,12 +1,22 @@
 from os import environ
 
 SESSION_CONFIGS = [
-    dict(
-        name='TG',
-        app_sequence=['TG'],
-        num_demo_participants=2,
-        treatment = "method"# play= sequential; method= strategy method
-    ),
+    # dict(
+    #     name='LIVE',
+    #     app_sequence=['live_pages'],
+    #     num_demo_participants=2
+    # ),
+    # dict(
+    #     name='STYLE',
+    #     app_sequence=['styles'],
+    #     num_demo_participants=2
+    # ),
+    # dict(
+    #     name='TG',
+    #     app_sequence=['TG'],
+    #     num_demo_participants=2,
+    #     treatment = "method"# play= sequential; method= strategy method
+    # ),
     # dict(
     #     name='PGG',
     #     app_sequence=['PGG'],
@@ -17,11 +27,11 @@ SESSION_CONFIGS = [
     #     app_sequence=['groups_roles'],
     #     num_demo_participants=4,
     # ),
-    # dict(
-    #     name='MPL',
-    #     app_sequence=['MPL'],
-    #     num_demo_participants=4,
-    #),
+    dict(
+        name='MPL',
+        app_sequence=['MPL'],
+        num_demo_participants=4,
+    ),
     #     dict(
     #     name='PGG',
     #     app_sequence=['PGG'],
